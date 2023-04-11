@@ -1,0 +1,409 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow: hidden;
+}
+
+.switch {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    border-radius: 0 0 80% 0;
+    transition: border-radius 1s, color 1s, background-color 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.switch #background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    border-radius: 80% 0 0 0;
+    flex-direction: column-reverse;
+    color: black;
+}
+
+header {
+    padding: 1vh 0 0 1vw;
+    font-family: "coquette", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.switch header {
+    text-align: right;
+    padding: 0 1vw 1vh 0;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "parity-sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3.5em;
+}
+
+header h2 {
+    padding: 0 0 0 5vw;
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    gap: 1vw;
+    font-family: "avebury-inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10vh 0;
+    align-self: flex-start;
+    margin: 0 0 0 2vw;
+}
+
+.switch main {
+    flex-direction: row-reverse;
+    top: 50vh;
+    right: 0;
+    align-self: flex-end;
+    margin: 0 2vw 0 0;
+}
+
+ul li
+{
+    list-style-type: '⟡';
+    margin: 0 1em;
+    padding: 0 0 0 0.5em;
+    font-size: 1.1em;
+}
+
+ul li:hover
+{
+    list-style-type: '⟣';
+}
+
+.switch ul li
+{
+    color: black;
+}
+
+li a        {
+    font-family: "coquette", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width:100%;
+    background-image: linear-gradient(to left,
+                      transparent,
+                      transparent 50%,
+                      #fffbc5 50%,
+                      #fffbc5);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    position: relative;
+    overflow: hidden;
+    color: darkgrey;
+}
+
+li a::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    content: '';
+    display: block;
+    border-top: 0.1em solid currentColor;
+    transform: translateX(-100%);
+    transition: transform .25s ease-in-out; 
+  }
+
+li a:hover {        
+    background-position: 0 0;
+    color:white;
+    
+}
+
+li a:hover:after {
+    transform: translateX(0);
+}
+
+.switch li a {
+    background-image: linear-gradient(to left,
+                      transparent,
+                      transparent 50%,
+                      #404b60 50%,
+                      #404b60);
+    color: rgb(62, 62, 62);
+} 
+
+ul li a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.switch ul li a:hover
+{
+    background-color: black;
+    color: rgb(233, 233, 233);
+}
+
+section {
+    width: 20vw;
+    background-color: #333;
+    border-radius: 1em;
+    overflow: hidden;
+    animation: float 7s ease-in-out infinite;
+    padding: 0 0 0 0.1em;
+}
+
+.switch section {
+    background-color: rgb(172, 172, 172);
+}
+
+#research {
+    animation: float 5s ease-in-out infinite;
+}
+
+#capstone {
+    animation: float 6s ease-in-out infinite;
+}
+
+#development {
+    animation: float 4s ease-in-out infinite;
+}
+
+#krad {
+    position: absolute;
+    bottom: -25vh;
+    right: 0;
+    height: 70vh;
+    z-index: 1;
+}
+.switch #krad {
+    transition:1s;
+    z-index: -100;
+}
+
+#moonie {
+    position: absolute;
+    top: -10vh;
+    left: -10vh;
+    height: 75vh;
+    z-index: -100;
+}
+
+.moon {
+    cursor: pointer;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background: black;
+    background: 
+    radial-gradient(circle at -220% 50%, black 70%,transparent 71%),
+    radial-gradient(circle at 320% 50%, black 70%,transparent 71%),
+    radial-gradient(circle at 50% 320% , black 70%,transparent 71%),
+    radial-gradient(circle at 50% -220% , black 70%,transparent 71%),
+    linear-gradient(black,black) content-box;
+    box-shadow: 1vh 1vh 0 0 #fff77e;
+    z-index: 1000;
+    transition: 1s;
+}
+
+.moon:hover {
+    box-shadow: 2vh 2vh 0 0 #fff77e, 0 0 2vh 1vh #fff, 0 0 4vh 3vh rgb(255, 254, 205);
+}
+
+.diamond {
+    cursor: pointer;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 0;
+    transform: scale(0.9) rotate(135deg);
+    background: 
+        radial-gradient(circle at -220% 50%, #fff 70%,transparent 71%),
+        radial-gradient(circle at 320% 50%, #fff 70%,transparent 71%),
+        radial-gradient(circle at 50% 320% , #fff 70%,transparent 71%),
+        radial-gradient(circle at 50% -220% , #fff 70%,transparent 71%),
+        linear-gradient(black,black) content-box;
+    box-shadow: 0 0 0 0 #fff77e;
+    transition: 1s;
+}
+
+.diamond:hover {
+    transform: scale(0.8) rotate(135deg);
+    box-shadow: -10px -10px 10px 10px rgb(68, 68, 68)
+}
+
+.diamond:before {
+    content: '◆';
+    color: black;
+    position: absolute;
+    right: -3vh;
+    transform: scale(1.5) rotate(45deg);
+    transition: 1s;
+}
+
+.diamond:hover:before {
+    transform: scale(2) rotate(45deg);
+}
+
+.diamond:after {
+    content: '◆';
+    color: black;
+    position: absolute;
+    left: -2vh;
+    transform: scale(1.3) rotate(45deg);
+    transition: 1s;
+}
+
+.diamond:hover:after {
+    transform: scale(2) rotate(45deg);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
+    font-family: "parity-sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color:rgb(172, 172, 172)
+}
+
+.switch footer {
+    color: rgb(62, 62, 62)
+}
+
+a {
+    color:#fffbc5;
+  }
+  
+.switch a {
+    color: #404b60;
+  }
+
+#moom {
+    position: absolute;
+    left: 2vw;
+    bottom: 4vh;
+    height: 15vh;
+  }
+
+  .wiggle {
+
+    animation: schmoovesKrad 5s infinite;
+  }
+
+  .switch .wiggle {
+
+    animation: schmoovesMoonie 5s infinite;
+  }
+
+  .turn {
+    animation: sheTurnsBack 1s;
+  }
+
+  .switch .turn {
+    animation: sheTurns 1s;
+  }
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+  @keyframes schmoovesKrad {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
+
+  @keyframes sheTurns {
+    0% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(-1);
+    }
+  }
+
+  @keyframes sheTurnsBack {
+    0% {
+      transform: scaleX(-1);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes schmoovesKrad {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
+
+  @keyframes schmoovesMoonie {
+    0% {
+      transform: rotate(0deg) scaleX(-1);
+    }
+    25% {
+      transform: rotate(15deg) scaleX(-1);
+    }
+    50% {
+      transform: rotate(0deg) scaleX(-1);
+    }
+    75% {
+        transform: rotate(-20deg) scaleX(-1);
+    }
+    100% {
+        transform: rotate(0deg) scaleX(-1);
+    }
+  }
