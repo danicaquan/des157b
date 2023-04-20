@@ -1,0 +1,232 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: none;
+        }
+        
+        body {
+            background-color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: "lores-9-narrow", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: antiquewhite;
+        }
+        
+        #myVideo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: 95%;
+            transform: translate(-50%, -50%);
+            transition: opacity 1s;
+        }
+        
+        #text {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: opacity 1s;
+            backdrop-filter: blur(5px) invert(80%);
+        }
+
+        #text p {
+            position: absolute;
+            padding: 0.5em;
+            
+            font-size: 2em;
+            background-image: url(media/text-background.gif);
+            background-size: contain;
+            background-repeat: repeat-x;
+            transition: all 1s;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .fa-expand {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            color:gray;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        .showing {
+            opacity: 1;
+        }
+
+        #escape {
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            background-image: url(media/escape-background.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            visibility: hidden;
+            cursor: alias;
+            z-index: 1000;
+        }
+
+        #escape p {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            transition: opacity 1s;
+        }
+
+        #e-line1 {
+            top: 40%;
+            left: 50%;
+        }
+
+        #e-line2 {
+            top: 45%;
+            left: 50%;
+        }
+
+        #e-line3 {
+            top: 50%;
+            left: 50%;
+        }
+
+        #e-line4 {
+            top: 55%;
+            left: 50%;
+            text-decoration: line-through;
+        }
+
+        #popup {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            color: whitesmoke;
+            pointer-events: none;
+            font-family: "input-mono-narrow", monospace;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 0.7em;
+            animation: text-flicker 5s infinite;
+            transition: color 0.5s;
+            z-index: 1;
+            word-break: break-all;
+        }
+
+        .loading {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(media/loading-background.gif);
+            position: absolute;
+            
+        }
+
+        .dots {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: white;
+            animation: dot-flashing 1s infinite linear alternate;
+            animation-delay: 0.5s;
+        }
+
+        .dots::before, .dots::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+        }
+
+        .dots::before {
+            left: -15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color:  rgb(197, 197, 197);
+            animation: dot-flashing 1s infinite alternate;
+            animation-delay: 0s;
+        }
+
+        .dots::after {
+            left: 15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: rgb(197, 197, 197);
+            animation: dot-flashing 1s infinite alternate;
+            animation-delay: 1s;
+        }
+          
+        @keyframes dot-flashing {
+            0% {
+              background-color: #878787;
+            }
+            50%, 100% {
+              background-color: rgba(204, 193, 253, 0.2);
+            }
+        }
+
+        @keyframes text-flicker {
+            0% {
+              opacity:0.1;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+            }
+            
+            2% {
+              opacity:1;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+            }
+            8% {
+              opacity:0.1;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+            }
+            9% {
+              opacity:1;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+            }
+            12% {
+              opacity:0.1;
+              text-shadow: 0px 0px rgba(242, 22, 22, 1);
+            }
+            20% {
+              opacity:1;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+            }
+            25% {
+              opacity:0.3;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+            }
+            30% {
+              opacity:1;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+            }
+            
+            70% {
+              opacity:0.7;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+            }
+            
+            72% {
+              opacity:0.2;
+              text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+            }
+            
+            77% {
+              opacity:.9;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+            }
+            100% {
+              opacity:.9;
+              text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+            }
+        }
