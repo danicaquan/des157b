@@ -55,6 +55,7 @@ body:before {
 	text-align: justify;
 	transform: translateX(-50%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgb(255, 223, 45) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+        z-index: 1;
 }
 .timeline:after {
         display: inline-block;
@@ -93,6 +94,9 @@ body:before {
         font-weight: 300;
         font-style: normal;
         font-size: 1.2em;
+        position: absolute;
+
+        top: 0;
         
 }
 
@@ -108,104 +112,90 @@ body:before {
         z-index: -1000;
 }
 
-.entry:hover:before {
-        opacity: 0;
-}
-
-#points {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        z-index: -1;
-        width: 90vw;
-        transform: translate(-50%, 0);
-	margin: 0 auto;
-}
-
 #entry1 {
         position: absolute;
-        left: 12%;
+        left: 14%;
 }
 
 #entry2 {
         position: absolute;
-        left: 16%;
+        left: 18.5%;
 }
 
 #entry3 {
         position: absolute;
-        left: 17%;
+        left: 19.5%;
 }
 
 #entry4 {
         position: absolute;
-        left: 19%;
+        left: 21.5%;
 }
 
 #entry5 {
         position: absolute;
-        left: 20%;
+        left: 22.5%;
 }
 
 #entry6 {
         position: absolute;
-        left: 34%;
+        left: 35%;
 }
 
 #entry7 {
         position: absolute;
-        left: 35%;
+        left: 36%;
 }
 
 #entry8 {
         position: absolute;
-        left: 51%;
+        left: 50%;
 }
 
 #entry9 {
         position: absolute;
-        left: 52%;
+        left: 51%;
 }
 
 #entry10 {
         position: absolute;
-        left: 53%;
+        left: 52%;
 }
 
 #entry11 {
         position: absolute;
-        left: 54%;
+        left: 53%;
 }
 
 #entry12 {
         position: absolute;
-        left: 57%;
+        left: 57.5%;
 }
 
 
 #entry13 {
         position: absolute;
-        left: 61.6%;
+        left: 61%;
 }
 
 #entry14 {
         position: absolute;
-        left: 63%;
+        left: 62%;
 }
 
 #entry15 {
         position: absolute;
-        left: 64%;
+        left: 63%;
 }
 
 #entry16 {
         position: absolute;
-        left: 71.1%;
+        left: 68.5%;
 }
 
 #entry17 {
         position: absolute;
-        left: 90.1%;
+        left: 86.1%;
 }
 
 .entry h3 {
@@ -261,12 +251,13 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 100;
-    }
-    #info{
+        z-index: 1000;
+}
+
+ #info{
         background-color: white;
         color: black;
-        width: 80vw;
+        width: 60vw;
         padding: 3em;
         border-radius: 1em;
         margin: auto;
@@ -274,23 +265,36 @@ header {
         text-align: center;
         font-family: "acier-bat-strokes", sans-serif;
         font-weight: 400;
+        font-style: normal;  
+}
+
+#info h2 {
+        font-size: 2em;
+}
+
+#info h3 {
+        font-family: "casablanca-urw", sans-serif;
+        font-weight: 300;
         font-style: normal;
-    }
+}
     
-    #info p {
+#info p {
         text-align: left;
         font-family: "casablanca-urw", sans-serif;
         font-weight: 300;
         font-style: normal;
-    }
+        font-size: 1.2em;
+}
     
-    .open {
+.open {
         display: block;
-    }
-    .closed {
+}
+
+.closed {
         display: none
-    }
-    #openinfo {
+}
+
+#openinfo {
         border-radius: 50%;
         border: 1px solid white;
         color: white;
@@ -303,7 +307,18 @@ header {
         position: absolute;
         top: 10px;
         left: 10px;
-    }
-    #openinfo:hover {
+}
+
+#openinfo:hover {
         background-color: rgba(255, 255, 255, 0.5);
-    }
+}
+
+#moom {
+        position: absolute;
+        bottom: -10vh;
+        right: 0;
+}
+
+a:hover {
+        color: rgb(255, 228, 76);
+}

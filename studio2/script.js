@@ -18,9 +18,6 @@
         const getData = await fetch ('data.json');
         const data = await getData.json();
         globalData = Object.values(data);
-        console.log(globalData);
-        console.log(globalData[0].name)
-        
         
         for (let i = 0; i<entryPoints.length; i++) {
             entryPoints[i].addEventListener('mouseover', function(data){
@@ -42,7 +39,7 @@
         let html = `<h3>${data[dataPoint].date}</h3>`;
         html += `<div><ul><li>Obtained: ${data[dataPoint].name}</li>`;
         html += `<li>Took ${data[dataPoint].pity} rolls</li>`;
-        html += `<li>50/50? ${data[dataPoint].fifty_fifty}</li>`;
+        html += `<li>Win the 50/50? ${data[dataPoint].fifty_fifty}</li>`;
         html += `<li>Rolled on: ${data[dataPoint].banner} banner</li></ul></div>`;
         return html;
     }
