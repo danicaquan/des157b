@@ -1,0 +1,309 @@
+
+body {
+        background-color: grey;
+}
+
+h1 {
+        font-family: "acier-bat-strokes", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3em;
+        margin-bottom: 0;
+}
+
+header {
+        font-family: "casablanca-urw", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+}
+
+h2 {
+        margin-top: 0.5em;
+        font-size: 2em;
+}
+
+h3 {
+        font-size: 1em;
+}
+
+body:before {    
+        content: "";
+        background-image: linear-gradient(white 10%, transparent 50%), url('images/background.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.3;
+        z-index: -1000;
+  }
+
+.timeline {
+        position: absolute;
+        bottom: 10vh;
+        left: 50vw;
+	width:90vw;
+	height: 20px;
+        padding: 0 5em;
+        font-family: "casablanca-urw", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: rgb(255, 228, 76);
+	list-style: none;
+	text-align: justify;
+	transform: translateX(-50%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgb(255, 223, 45) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+}
+.timeline:after {
+        display: inline-block;
+        content: "";
+        width: 100%;
+    }
+    .timeline li {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	background: url(images/diamond.png);
+        background-size: contain;
+	text-align: center;
+	line-height: 1em;
+	position: relative;
+}
+.timeline li:before {
+	display: inline-block;
+	content: attr(data-year);
+	font-size: 1em;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -40px;
+}
+
+.entry {
+        width: 0.5vw;
+        height: 100vh;
+        transition: 1s;
+        transform: translate(-50%, 0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: "casablanca-urw", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.2em;
+        
+}
+
+.entry:before {
+        content: "";
+        background-image: linear-gradient(transparent 10%, black 90%);
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        z-index: -1000;
+}
+
+.entry:hover:before {
+        opacity: 0;
+}
+
+#points {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+        width: 90vw;
+        transform: translate(-50%, 0);
+	margin: 0 auto;
+}
+
+#entry1 {
+        position: absolute;
+        left: 12%;
+}
+
+#entry2 {
+        position: absolute;
+        left: 16%;
+}
+
+#entry3 {
+        position: absolute;
+        left: 17%;
+}
+
+#entry4 {
+        position: absolute;
+        left: 19%;
+}
+
+#entry5 {
+        position: absolute;
+        left: 20%;
+}
+
+#entry6 {
+        position: absolute;
+        left: 34%;
+}
+
+#entry7 {
+        position: absolute;
+        left: 35%;
+}
+
+#entry8 {
+        position: absolute;
+        left: 51%;
+}
+
+#entry9 {
+        position: absolute;
+        left: 52%;
+}
+
+#entry10 {
+        position: absolute;
+        left: 53%;
+}
+
+#entry11 {
+        position: absolute;
+        left: 54%;
+}
+
+#entry12 {
+        position: absolute;
+        left: 57%;
+}
+
+
+#entry13 {
+        position: absolute;
+        left: 61.6%;
+}
+
+#entry14 {
+        position: absolute;
+        left: 63%;
+}
+
+#entry15 {
+        position: absolute;
+        left: 64%;
+}
+
+#entry16 {
+        position: absolute;
+        left: 71.1%;
+}
+
+#entry17 {
+        position: absolute;
+        left: 90.1%;
+}
+
+.entry h3 {
+        position:absolute;
+        top: 50vh;
+        left: 10%;
+        transition: 1s;
+        font-size: 5vh;
+        color: white;
+        background-color: black;
+        font-family: "acier-bat-strokes", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        pointer-events: none;
+}
+
+.entry div {
+        position:absolute;
+        top: 60vh;
+        left: 40%;
+        transition: 1s;
+        color: white;
+        background-color: black;
+        padding: 0 2.5%;
+        width: 55%;
+        pointer-events: none;
+}
+
+.entry div ul {
+
+        padding:0;
+
+        list-style: none;
+}
+.entry div ul li:before {
+        content: '';
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        background-size: contain;
+        background-image: url(images/primogem.png);
+} 
+
+header {
+        text-align: center;
+}
+
+#overlay{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    #info{
+        background-color: white;
+        color: black;
+        width: 80vw;
+        padding: 3em;
+        border-radius: 1em;
+        margin: auto;
+        transform: translate(0, 50%);
+        text-align: center;
+        font-family: "acier-bat-strokes", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    #info p {
+        text-align: left;
+        font-family: "casablanca-urw", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .open {
+        display: block;
+    }
+    .closed {
+        display: none
+    }
+    #openinfo {
+        border-radius: 50%;
+        border: 1px solid white;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 10px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    #openinfo:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }

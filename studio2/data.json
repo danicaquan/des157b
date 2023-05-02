@@ -1,0 +1,140 @@
+{
+    "1": {
+        "date":"2022-10-21",
+        "name":"Primordial Jade Winged Spear",
+        "pity":"74",
+        "fifty_fifty":"N/A",
+        "banner":"Standard",
+        "image":"pjws.png"
+    },
+    "2": {
+        "date":"2022-11-01",
+        "name":"Jean",
+        "pity":"70",
+        "fifty_fifty":"Lost.. BECAUSE OF HER",
+        "banner":"Character",
+        "image":"jean.png"
+    },
+    "3": {
+        "date":"2022-11-01",
+        "name":"Nahida",
+        "pity":"80",
+        "fifty_fifty":"Lost",
+        "banner":"Character",
+        "image":"nahida.png"
+    },
+
+    "4": {
+        "date":"2022-11-03",
+        "name":"Skyward Harp",
+        "pity":"28",
+        "fifty_fifty":"Lost... BECAUSE OF IT",
+        "banner":"Weapon",
+        "image":"skyward.png"
+    },
+    "5": {
+        "date":"2022-11-03",
+        "name":"A Thousand Floating Dreams",
+        "pity":"66",
+        "fifty_fifty":"Lost",
+        "banner":"Weapon",
+        "image":"dreams.png"
+    },
+    "6": {
+        "date":"2022-12-06",
+        "name":"Qiqi",
+        "pity":"77",
+        "fifty_fifty":"Lost.. BECAUSE OF HER",
+        "banner":"Character",
+        "image":"qiqi.png"
+    },
+    "7": {
+        "date":"2022-12-06",
+        "name":"Wanderer",
+        "pity":"30",
+        "fifty_fifty":"Lost",
+        "banner":"Character",
+        "image":"wanderer.png"
+    },
+    "8": {
+        "date":"2023-1-17",
+        "name":"Alhaitham",
+        "pity":"77",
+        "fifty_fifty":"Won",
+        "banner":"Character",
+        "image":"alhaitham.png"
+    },
+    "9": {
+        "date":"2023-1-17",
+        "name":"Primordial Jade Winged Spear",
+        "pity":"25",
+        "fifty_fifty":"Won",
+        "banner":"Weapon",
+        "image":"pjws.png"
+    },
+    "10": {
+        "date":"2023-1-17",
+        "name":"Primordial Jade Winged Spear",
+        "pity":"65",
+        "fifty_fifty":"Won",
+        "banner":"Weapon",
+        "image":"pjws.png"
+    },
+    "11": {
+        "date":"2023-1-17",
+        "name":"Light of Foliar Incision",
+        "pity":"52",
+        "fifty_fifty":"Won",
+        "banner":"Weapon",
+        "image":"foliar.png"
+    },
+    "12": {
+        "date":"2023-1-27",
+        "name":"Jean",
+        "pity":"79",
+        "fifty_fifty":"Lost.. BECAUSE OF HER",
+        "banner":"Character",
+        "image":"jean.png"
+    },
+    "13": {
+        "date":"2023-2-08",
+        "name":"Staff Of Homa",
+        "pity":"23",
+        "fifty_fifty":"Won",
+        "banner":"Weapon",
+        "image":"homa.png"
+    },
+    "14": {
+        "date":"2023-2-12",
+        "name":"'Amos' Bow",
+        "pity":"65",
+        "fifty_fifty":"Lost... BECAUSE OF IT",
+        "banner":"Weapon",
+        "image":"amos.png"
+    },
+    "15": {
+        "date":"2023-02-13",
+        "name":"Aqua Simulacra",
+        "pity":"67",
+        "fifty_fifty":"Lost",
+        "banner":"Weapon",
+        "image":"aqua.png"
+    },
+    "16": {
+        "date":"2023-02-28",
+        "name":"Dehya",
+        "pity":"78",
+        "fifty_fifty":"Lost",
+        "banner":"Character",
+        "image":"dehya.png"
+    },
+    "17": {
+        "date":"2023-04-11",
+        "name":"Keqing",
+        "pity":"77",
+        "fifty_fifty":"N/A",
+        "banner":"Standard",
+        "image":"keqing.png"
+    }
+    
+}
