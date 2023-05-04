@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+}
+#map {
+    height: 98vh;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.5em;
+}
