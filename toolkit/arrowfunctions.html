@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <style>
+        html {
+            background-color: #efefef;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4em;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arrow Functions</h1>
+
+    <p>I took this function and modified it from my final project of DES157A. <br> It generates two random numbers and returns the sum of them.</break></p>
+
+
+    <h2>Named Function</h2>
+    <code>
+        <pre>
+            function throwDice(){
+                const roll1 = Math.floor(Math.random() * 6) + 1;
+                const roll2 = Math.floor(Math.random() * 6) + 1;
+                const rollSum = roll1 + roll2;
+        
+                return rollSum;
+            }
+            console.log(throwDice());
+        </pre>
+    </code>
+
+    <h2>Function Expression</h2>
+    <code>
+        <pre>
+            const throwDice = function(){
+                const roll1 = Math.floor(Math.random() * 6) + 1;
+                const roll2 = Math.floor(Math.random() * 6) + 1;
+                const rollSum = roll1 + roll2;
+        
+                return rollSum;
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <code>
+        <pre>
+            const throwDice = () => {
+                const roll1 = Math.floor(Math.random() * 6) + 1;
+                const roll2 = Math.floor(Math.random() * 6) + 1;
+                const rollSum = roll1 + roll2;
+                return rollSum;
+            }
+            console.log(throwDice());
+        </pre>
+    </code>
+
+    <footer> Danica Quan </footer>
+    <script>
+       /* function throwDice(){
+        const roll1 = Math.floor(Math.random() * 6) + 1;
+        const roll2 = Math.floor(Math.random() * 6) + 1;
+        const rollSum = roll1 + roll2;
+
+        return rollSum;
+    }
+    console.log(throwDice()); */
+    /*const throwDice = function(){
+        const roll1 = Math.floor(Math.random() * 6) + 1;
+        const roll2 = Math.floor(Math.random() * 6) + 1;
+        const rollSum = roll1 + roll2;
+
+        return rollSum;
+    }
+    console.log(throwDice());*/
+
+    /* const throwDice = () => {
+        const roll1 = Math.floor(Math.random() * 6) + 1;
+        const roll2 = Math.floor(Math.random() * 6) + 1;
+        const rollSum = roll1 + roll2;
+
+        return rollSum;
+    }
+    console.log(throwDice()); */
+    </script>
+    
+</body>
+</html>
