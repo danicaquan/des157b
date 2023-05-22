@@ -27,6 +27,8 @@
       
 
       const shards = document.querySelectorAll('.shards');
+      const shardInfo = document.querySelectorAll('.about-info')
+      const returnBtns = document.querySelectorAll('button')
       for (const shard of shards) {
       shard.addEventListener('mouseover', function(){
         shard.style.filter = 'invert(75%)';
@@ -35,4 +37,17 @@
         shard.style.filter = 'none';
       })
     }
+for (let i = 0; i<shardInfo.length; i++){
+    shards[i].addEventListener('click', function(){
+      shardInfo[i].className = 'showing about-info';
+    })
+    returnBtns[i].addEventListener('click', function(event){
+      event.preventDefault();
+      shardInfo[i].style.animation = 'square-out-center 1s';
+      shardInfo[i].addEventListener("animationend", (event) => event.target.style.animation = '');
+      setTimeout(function(){
+        shardInfo[i].className = 'hidden about-info';
+      }, 1000);
+    })
+  }
 })();
