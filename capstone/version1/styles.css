@@ -1,0 +1,35 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+section {
+    background-color: brown;
+    border-radius: 0.5em;
+    width: 10em;
+    height: 5em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 10em);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#center-seal {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background-color: grey;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+      }
