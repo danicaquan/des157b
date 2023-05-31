@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis Centennial Seal: Virtual Bricks!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    
+</head>
+<body>
+
+        <i>insert davis logo here</i>
+
+        <nav class="nav-hidden">
+            insert nav here
+        </nav>
+
+    
+    <div id="controls">
+        <div id="screensize-control">
+            <a href="#" id="zoomin">+</a> <a href="#" id="zoomout">-</a> 
+        </div>
+
+        <button id="create">Add Your Own!</button>
+    </div>
+
+    <aside class="hidden">
+        <p>Scroll around and click on bricks to explore people's responses!</p>
+    </aside>
+
+    <main>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+        <section class="brick">
+            <h3>Name</h3>
+            <p>blah blah blah they said something</p>
+        </section>
+
+    <div id="center-seal"></div>
+    </main>
+
+    <div  id="title-page">
+        <h1>Davis Centennial Seal and Bricks</h1>
+        <button id="open-page">Take a Look</button>
+    </div>
+
+    <article class="hidden" id="read-submission">
+    <div id="submission-container">
+        <h2>This person says...</h2>
+        <p>their submission will be here and will probably just change based on what brick you click</p>
+        <button class="back">&otimes;</button>
+    </div>
+    </article>
+
+    <form class="hidden">
+        <div id="write-submission">
+        <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="thoughts">What do you think about the city of Davis</label>
+            <input type="text" id="thoughts" placeholder="type here..." >
+            <input type="submit" id="submit" value="Let's Go!" >
+            <button class="back">&otimes;</button>
+        </div>
+    </form>
+</body>
+</html>

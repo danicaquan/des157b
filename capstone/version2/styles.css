@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+section {
+    background-color: brown;
+    border-radius: 0.5em;
+    width: 50em;
+    height: 25em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+main {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 50em);
+    transition: transform 1s;
+    transform-origin: center;
+    transform: scale(1.5);
+    grid-gap: 0.5vh;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.showing {
+    visibility: visible;
+}
+
+#center-seal {
+    height: 50em;
+    width: 50em;
+    border-radius: 50%;
+    background-color: grey;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+}
+
+#read-submission {
+    position: fixed;
+    top:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    height: 100vh;
+}
+
+#submission-container {
+    background-color: white;
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 5vh 5vw;
+    border-radius: 1em;
+}
+
+#create {
+    position: absolute;
+    bottom: 2vh;
+    left: 2vw;
+}
+
+#title-page {
+    position:absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#screensize-control {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+#screensize-control a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:48px;
+    color:#423d5e;
+    border-radius: 10px;
+}
+
+#screensize-control a:hover {
+    background-color: #423d5e;
+    color: #fff;
+}
+i, nav, #create {
+    position: fixed;
+    z-index: 10;
+}
+
+.brick:hover {
+    background-color: rgb(236, 92, 92);
+}
+
+.back {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+form {
+    position: fixed;
+    top:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    height: 100vh;
+}
+
+#write-submission {
+    background-color: white;
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 5vh 5vw;
+    border-radius: 1em;
+}
+
+input{
+    display: block;
+    text-align: left;
+    font-size: 1em;
+}
+
+#submit {
+    display: block;
+    padding: 0.5em;
+    margin: 1em auto auto auto;
+}
+
+#controls {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
