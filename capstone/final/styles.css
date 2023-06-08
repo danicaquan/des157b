@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    background-image: url(images/background.jpeg);
+    
+}
+section {
+    background-color: brown;
+    background-image: url(images/bricks.png);
+    position:relative;
+    border: 0.5em solid;
+    border-color: rgb(128, 41, 41);
+    border-radius: 1em;
+    width: 50em;
+    height: 25em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+main {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 50em);
+    transition: transform 1s;
+    transform-origin: center;
+    transform: scale(1.5);
+    grid-gap: 0.5vh;
+    
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.showing {
+    visibility: visible;
+}
+
+#center-seal {
+    height: 50em;
+    width: 50em;
+    background-color: rgba(0, 0, 0, 0);
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+    background-image: url(images/seal-graphic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 50em;
+}
+
+#center-seal:hover {
+    filter: drop-shadow(12px 12px 12px rgba(252, 255, 180, 0.5));
+    opacity: 50%;
+}
+
+#read-submission {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
+#submission-container {
+    background-color: white;
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 5vh 5vw;
+    border-radius: 1em;
+}
+
+#create {
+    bottom: 2vh;
+    left: 2vw;
+}
+
+button {
+    width : 15vw;
+    height: 10vh;
+    border-radius: 1em;
+}
+
+#title-page {
+    position:fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title-container {
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    bottom: 0;
+    position:fixed;
+    z-index: 10;
+}
+
+#screensize-control {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#screensize-control i {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:48px;
+    color:#423d5e;
+    border-radius: 10px;
+}
+
+#screensize-control i:hover {
+    background-color: #423d5e;
+    color: #fff;
+}
+ #create {
+    position: fixed;
+    z-index: 10;
+}
+
+.brick:hover {
+    background-color: rgb(236, 92, 92);
+}
+
+.back {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+form {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
+#write-submission {
+    background-color: white;
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 5vh 5vw;
+    border-radius: 1em;
+}
+
+input{
+    display: block;
+    text-align: left;
+    font-size: 1em;
+}
+
+#submit {
+    display: block;
+    padding: 0.5em;
+    margin: 1em auto auto auto;
+}
+
+#controls {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+aside {
+    position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 1;
+    border-radius: 1em;
+}
+
+#thanks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#thanks-container{
+    background-color: white;
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 5vh 5vw;
+    border-radius: 1em;
+}
+
+#create i {
+    position: fixed;
+    z-index: 1000;
+}
+
+#error {
+    text-align: right;
+}
+
+.close {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    cursor: pointer;
+    outline: none;
+    transform: translate(0, -50%);
+}
+
+section h3 {
+    font-family: 'Bentham', serif;
+    font-size: 7em;
+}
+
+section p {
+    font-family: 'Pangolin', cursive;
+    font-size: 4em;
+}
+
+.fa-pencil {
+    position: fixed;
+    bottom:3vh;
+    left: 15vw;
+    font-size: 2em;
+}
+
+#confetti-canvas {
+    position: fixed;
+    top:0;
+    left:0;
+  }
+
+  #seal-info {
+    position: fixed;
+    top:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    height: 100vh;
+}
+
+#date {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1em;
+}

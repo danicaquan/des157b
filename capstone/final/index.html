@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Davis: Virtual Bricks!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="confetti.js"></script>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/woq5bll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bentham&family=Pangolin&family=Slackside+One&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="controls">
+        <div id="screensize-control">
+            <i id="zoomin" class="fa-regular fa-magnifying-glass-plus"></i>
+            <i id="zoomout" class="fa-regular fa-magnifying-glass-minus"></i> 
+        </div>
+
+        <button id="create">Add Your Own!
+            <i class="fa-solid fa-pencil"></i>
+        </button>
+    </div>
+
+    <aside class="hidden">
+        <p>Scroll around and click on bricks to explore people's responses!</p>
+        <button class="close">&otimes;</button>
+    </aside>
+
+    <main>
+        
+    <div id="center-seal"></div>
+    </main>
+<div id="title-container">
+    <div id="title-page">
+        <h1>City of Davis: Virtual Bricks!</h1>
+        <button id="open-about">About Page</button>
+        <button id="open-page">Take a Look</button>
+    </div>
+</div>
+
+    <article class="hidden" id="read-submission">
+    <div id="submission-container">
+        <h2>This person says...</h2>
+        <p id="submit-date">Created on: </p>
+        <p id="user-status">Been in Davis for:</p>
+        <p id="submit-content">their submission will be here and will probably just change based on what brick you click</p>
+        <button class="back">&otimes;</button>
+    </div>
+    </article>
+<article id="seal-info" class="hidden" >
+    <div class="info-container">
+        <p>The Davis Centennial Seal is a 6.5 foot circular bronze seal installed in front of the Dresbach-Hunt-Boyer House at 604 Second St in downtown Davis. For further reference, this is near Mishka's Cafe. It was created in commemoration of the 100th anniversary of the 1917 incorporation of the city of Davis by the artist Susan Shelton. The seal's imagery celebrates and conveys the deep and complex history of Davis: from it's founding, notable historical events, landscape, and more. To learn more about the seal, it's influences, creation, and more, please visit this page.</p>
+
+        <p>Alongside the seal, the city develop an adopt-a-brick program in order to help supplement the rest of the funding for the seal. Organizations or individuals can purchase an inlaid plaza brick with chosen inscriptions. The plaza includes space for more than 2,000 inscribed bricks. 100 historic bricks memorializing important figures who have died and large bricks for the 11 key donors were placed upon installation of the Seal.
+
+            Davis nonprofits: $25/brick
+            
+            Individuals and Families: $150/brick  
+        </p>
+        <button class="back">&otimes;</button>
+    </div>
+</article>
+
+    <form class="hidden">
+        <div id="write-submission">
+        <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        <label for="length">How long have you been living in the city of Davis?</label>
+        <input type="text" id="length" name="length">
+        <label for="thoughts">What do you think about the city of Davis?
+            Consider answering the following questions:
+                <ul>
+                    <li>Relay a positive or negative experience you have had in Davis.</li>
+                    <li>What do you think the city could improve upon? Why do you think so?</li>
+                    <li>What are some of your favorite places in Davis and why?</li>
+                    <li>What are some of your favorite memories made in Davis and why?</li>
+                    <li>If you were originally from another location, how has your experience living in Davis been in comparison to other places?</li>
+                    <li>Any advice or knowledge in regards to the city would you like to impart upon someone who might be reading this?</li>
+                </ul>
+            <p>Please note: although you are encouraged to share any issues you have encountered in the city, please try to keep it constructive. Any hate or inflammatory remarks will not be tolerated and will be deleted.</p>
+        </label>
+            <input type="text" id="thoughts" name="thoughts" placeholder="type here..." >
+        <input type="submit" id="submit" value="Let's Go!" >
+            <button class="back">&otimes;</button>
+        </div>
+    </form>
+
+    <div id="thanks" class="hidden">
+        <div id="thanks-container">
+        <h2>Thank you for contributing! Your brick should be added to the page!</h2>
+        <button class="back">&otimes;</button>
+        </div>
+    </div>
+</body>
+</html>
